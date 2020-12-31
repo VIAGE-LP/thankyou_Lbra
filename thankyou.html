@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="/CommonFiles/js/jquery-3.3.1.min.js"></script>
+    <script src="/CommonFiles/js/jquery.cookie-1.4.1.min.js"></script>
+    <script src="/CommonFiles/thankyou/main.js?ver=20200407"></script>
+    <script>
+        // redirectGA();
+        redirectOrderInfo();
+    </script>
+    <!-- write your code here -->
+    <!-- <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script> -->
+    <!-- <script src="gift_bra.js?1553852348708"></script> -->
+    <!-- <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        function init() {
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp = AdobeAn.getComposition("8EDFC5D318CA964EA03D852CB4A3D974");
+            var lib = comp.getLibrary();
+            var loader = new createjs.LoadQueue(false);
+            loader.addEventListener("fileload", function (evt) { handleFileLoad(evt, comp) });
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+        function handleFileLoad(evt, comp) {
+            var images = comp.getImages();
+            if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }
+        }
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+            exportRoot = new lib.gift_box_內衣();
+            stage = new lib.Stage(canvas);
+            stage.enableMouseOver();
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            function makeResponsive(isResp, respDim, isScale, scaleType) {
+                var lastW, lastH, lastS = 1;
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+                function resizeCanvas() {
+                    var w = lib.properties.width, h = lib.properties.height;
+                    var iw = window.innerWidth, ih = window.innerHeight;
+                    var pRatio = window.devicePixelRatio || 1, xRatio = iw / w, yRatio = ih / h, sRatio = 1;
+                    if (isResp) {
+                        if ((respDim == 'width' && lastW == iw) || (respDim == 'height' && lastH == ih)) {
+                            sRatio = lastS;
+                        }
+                        else if (!isScale) {
+                            if (iw < w || ih < h)
+                                sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 1) {
+                            sRatio = Math.min(xRatio, yRatio);
+                        }
+                        else if (scaleType == 2) {
+                            sRatio = Math.max(xRatio, yRatio);
+                        }
+                    }
+                    canvas.width = w * pRatio * sRatio;
+                    canvas.height = h * pRatio * sRatio;
+                    canvas.style.width = dom_overlay_container.style.width = anim_container.style.width = w * sRatio + 'px';
+                    canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h * sRatio + 'px';
+                    stage.scaleX = pRatio * sRatio;
+                    stage.scaleY = pRatio * sRatio;
+                    lastW = iw; lastH = ih; lastS = sRatio;
+                    stage.tickOnUpdate = false;
+                    stage.update();
+                    stage.tickOnUpdate = true;
+                }
+            }
+            makeResponsive(false, 'both', false, 1);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+    </script> -->
+    <!-- write your code here -->
+
+    <style type="text/css">
+        /*////// 使用しなかった既存CSS //////*/
+
+        /*未訪問のリンク*/
+        /*a:link {
+	color:#FF6699;
+	text-decoration:none;
+}*/
+
+        /*訪問後のリンク*/
+        /*a:visited {
+	color:#FF6699;
+	text-decoration:none;
+}*/
+
+        /*マウスをのせたとき*/
+        /*a:hover {
+	color:#FF6699;
+	text-decoration:underline;
+}*/
+
+        /*body{
+	font-family:'SimSun','MS UI Gothic','Hei','sans-serif';
+	width:560px;
+	margin-top:30;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:0px;
+	}	
+div{
+	width:560px;
+	margin-top:30px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	margin-right:auto;
+	margin-bottom:0px;
+	text-align:center;
+	}
+.head{
+	width:100%;
+	text-align:center;
+	background-color:#63a8cf;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.head02{
+	width:100%;
+	text-align:center;
+	background-color:#59b0e3;
+	margin-left:auto;
+	margin-right:auto;
+	
+}*/
+        /*////// 使用しなかった既存CSSここまで //////*/
+
+        img {
+            border: none;
+            margin: 0px;
+        }
+
+        /* 追記・変更箇所ここから */
+        p,
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "思源黑體 TW Regular", "Microsoft JhengHei UI";
+            /*font-family : 'SimSun','MS UI Gothic','Hei','sans-serif';*/
+            /* ←こちらをしていしてもゴシック体にならなかった為、一応コメントアウトで残しております。 */
+            background-image: url(images/bg_confetti.png);
+            background-repeat: repeat-x;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .SP {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .PC {
+                display: none;
+            }
+
+            .SP {
+                display: block;
+            }
+        }
+
+        a:link,
+        a:visited {
+            color: #2747C9;
+            text-decoration: none;
+        }
+
+        a:link:hover,
+        a[href]:hover {
+            color: #F01014;
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding-bottom: 150px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+            max-width: 598px;
+            margin: 50px auto;
+            height: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.180392) 0px 0px 7px 0px;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.180392) 0px 0px 7px 0px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.180392) 0px 0px 7px 0px;
+        }
+
+        .pageTitle {
+            margin: 30px 0 20px 0;
+        }
+
+
+        .contents {
+            margin-bottom: 40px;
+        }
+
+        .inform {
+            text-align: left;
+            padding: 0 5%;
+            color: #F01014;
+        }
+
+        .inform ul {
+            padding: 5% 10%;
+            background: rgba(0, 0, 0, 0.05);
+            list-style-type: square;
+        }
+
+        .tx1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .tx2 {
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        .tx3 {
+            text-align: left;
+            padding: 0 5%;
+            color: #464646;
+        }
+
+        .tx4 {
+            text-align: left;
+            padding: 30px 0 0 5%;
+            color: #464646;
+        }
+
+        @media screen and (max-width: 768px) {
+            .tx4 {
+                padding: 5%;
+            }
+        }
+
+        .red {
+            color: #F01014;
+        }
+
+        .blue {
+            color: #122A8A;
+        }
+
+        .small {
+            font-size: 14px;
+        }
+
+        .foot {
+            color: #121212;
+            padding: 0 5%;
+        }
+
+        .footTitle {
+            font-weight: bold;
+            text-align: left;
+            line-height: 24px;
+        }
+
+        .footContents {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .footContact {
+            width: 50%;
+            float: left;
+        }
+
+        .footSocial {
+            padding-top: 5px;
+            width: 50%;
+            float: right;
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .footContactR {
+            float: right;
+        }
+
+        .homeBtn a {
+            margin: 40px auto 0 auto;
+            display: block;
+            width: 150px;
+            color: #000;
+            background-color: #ddd;
+            text-align: center;
+            text-decoration: none;
+            padding: 15px 0;
+        }
+
+        .homeBtn a span.homeIcon {
+            width: 18px;
+            height: 16px;
+            background-image: url(images/ic_home.png);
+            background-size: 18px 16px;
+            display: inline-block;
+            text-indent: -9999px;
+            vertical-align: middle;
+            margin: 0 5px 5px 0;
+        }
+
+        .homeBtn a:hover {
+            color: #666;
+            background-color: #eee;
+        }
+
+        .homeBtn a:hover span.homeIcon {
+            background-image: url(images/ic_home_hover.png);
+        }
+
+        .order {
+            display: none;
+        }
+
+        @media all and (max-width: 768px) {
+            body {
+                margin: 0 0 10% 0;
+            }
+
+            .container {
+                width: 95%;
+                max-width: none;
+                margin: 25px auto;
+                padding-bottom: 30vh;
+            }
+
+            #animation_container {
+                display: none;
+            }
+
+            .order {
+                display: block;
+            }
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PZC4KG2');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- LINE Tag Base Code 20200131-->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: 'b669c7f3-985c-44ec-9557-b05778559ef1'
+        });
+        _lt('send', 'pv', ['b669c7f3-985c-44ec-9557-b05778559ef1']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=b669c7f3-985c-44ec-9557-b05778559ef1&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['b669c7f3-985c-44ec-9557-b05778559ef1']);
+    </script>
+
+    <!-- LINE Tag Base Code 20200205-->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: 'b8a00e7f-ba6a-4a78-8de5-8e1668b95b40'
+        });
+        _lt('send', 'pv', ['b8a00e7f-ba6a-4a78-8de5-8e1668b95b40']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=b8a00e7f-ba6a-4a78-8de5-8e1668b95b40&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'viagetwlp'
+        }, ['b8a00e7f-ba6a-4a78-8de5-8e1668b95b40']);
+    </script>
+
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['b8a00e7f-ba6a-4a78-8de5-8e1668b95b40']);
+    </script>
+
+    <!-- LINE Tag Base Code 20200205ten-->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: '2a8e5ae2-7048-4cac-8e64-b7e9831a0a45'
+        });
+        _lt('send', 'pv', ['2a8e5ae2-7048-4cac-8e64-b7e9831a0a45']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=2a8e5ae2-7048-4cac-8e64-b7e9831a0a45&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['2a8e5ae2-7048-4cac-8e64-b7e9831a0a45']);
+    </script>
+
+    <!-- POPIN -->
+    <script type="text/javascript">
+        window._pop = window._pop || [];
+        window._pop.push(["_set_conversion_id", "viage_tw"]);
+        window._pop.push(["_set_action", "cv"]);
+        (function () {
+            var el = document.createElement("script"); el.type = "text/javascript"; el.async = true;
+            el.src = (("https:" == document.location.protocol) ? "https://" : "http://") + "api.popin.cc/conversion2.js";
+            var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(el, s);
+        })();
+    </script>
+
+    <!-- LINE Tag Base Code 20200217-->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: 'c9de5b63-e1d1-44f4-9b21-d88d3a7c69cd'
+        });
+        _lt('send', 'pv', ['c9de5b63-e1d1-44f4-9b21-d88d3a7c69cd']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=c9de5b63-e1d1-44f4-9b21-d88d3a7c69cd&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['c9de5b63-e1d1-44f4-9b21-d88d3a7c69cd']);
+    </script>
+
+    <!-- EBiS customize area start 20200603-->
+    <script type="text/javascript">
+        window.ebis = window.ebis || [];
+        ebis.push({
+            argument: '3cKbUegU',
+            member_name: '',
+            amount: '',
+            other1: '',
+            other2: '',
+            other3: '',
+            other4: '',
+            other5: '',
+        });
+    </script>
+    <!-- EBiS customize area end -->
+
+    <!-- EBiS tag version4.10 start 20200603-->
+    <script type="text/javascript">
+        (function (a, d, e, b, i, s) {
+            window[i] = window[i] || []; var f = function (a, d, e, b, i, s) {
+                var o = a.getElementsByTagName(d)[0], h = a.createElement(d), t = 'text/javascript';
+                h.type = t; h.async = e; h.onload = function () {
+                    window[i].init(
+                        { argument: s, auto: true }
+                    );
+                }; h._p = o; return h;
+            }, h = f(a, d, e, b, i, s), l = '//taj', j = b + s + '/cmt.js'; h.src = l + '1.' + j;
+            h._p.parentNode.insertBefore(h, h._p); h.onerror = function (k) {
+                k = f(a, d, e, b, i, s);
+                k.src = l + '2.' + j; k._p.parentNode.insertBefore(k, k._p);
+            };
+        })(document, 'script', true, 'ebis.ne.jp/', 'ebis', '3cKbUegU');
+    </script>
+    <!-- EBiS tag end -->
+
+    <!-- LINE Tag Base Code 20200304piala-->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: '508ae9b5-cff8-4136-927b-2f61ea0e850b'
+        });
+        _lt('send', 'pv', ['508ae9b5-cff8-4136-927b-2f61ea0e850b']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=508ae9b5-cff8-4136-927b-2f61ea0e850b&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['508ae9b5-cff8-4136-927b-2f61ea0e850b']);
+    </script>
+
+    <!-- LINE Tag Base Code 0313_piala -->
+    <!-- Do Not Modify -->
+    <script>
+        (function (g, d, o) {
+            g._ltq = g._ltq || []; g._lt = g._lt || function () { g._ltq.push(arguments) };
+            var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+            var s = d.createElement('script'); s.async = 1;
+            s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+            var t = d.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+        })(window, document);
+        _lt('init', {
+            customerType: 'lap',
+            tagId: '3c0118a2-1831-4d28-b2be-11d8375b555d'
+        });
+        _lt('send', 'pv', ['3c0118a2-1831-4d28-b2be-11d8375b555d']);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://tr.line.me/tag.gif?c_t=lap&t_id=3c0118a2-1831-4d28-b2be-11d8375b555d&e=pv&noscript=1" />
+    </noscript>
+    <!-- End LINE Tag Base Code -->
+    <script>
+        _lt('send', 'cv', {
+            type: 'Conversion'
+        }, ['3c0118a2-1831-4d28-b2be-11d8375b555d']);
+    </script>
+
+    <!-- 20.05.15 ASP -->
+    <script>
+        (function (w, d, o, u, r, a, m) { w['affiliateocean'] = r; w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) }, w[r].l = 1 * new Date(); a = d.createElement(o), m = d.getElementsByTagName(o)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m); })(window, document, 'script', 'https://affiliate-ocean.jp/cv.min.js', 'ao');
+        var ao_cv_params = { 'domain': location.hostname, 'cc': 'w0000372205', 'cv_url': 'https://affiliate-ocean.jp/cv/i/w0000372205/cv', 'oid': getJsonFromUrl().order_id, 'amt': getJsonFromUrl().payment_total }; ao('g', ao_cv_params);
+    </script>
+    <!-- 20.05.21 ASP-2 -->
+    <script>
+        (function (w, d, o, u, r, a, m) { w['affiliateocean'] = r; w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) }, w[r].l = 1 * new Date(); a = d.createElement(o), m = d.getElementsByTagName(o)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m); })(window, document, 'script', 'https://affiliate-ocean.jp/cv.min.js', 'ao');
+        var ao_cv_params = { 'domain': location.hostname, 'cc': 'w0000372007', 'cv_url': 'https://affiliate-ocean.jp/cv/i/w0000372007/cv', 'oid': getJsonFromUrl().order_id, 'amt': getJsonFromUrl().payment_total }; ao('g', ao_cv_params);
+    </script>
+
+    <!-- 20200709_fing tag -->
+    <script language='javascript' src='https://ad-fam.com/ad/js/cvib2.js'></script>
+    <script
+        language='javascript'>FAMAD_CV.cv(FAMAD_CV.CV_XUID_KEY, 'https://ad-fam.com/ad', `_buyer=4116&_buid=${getJsonFromUrl().order_id}`);</script>
+</head>
+
+<body onload="init();" style="margin:0px;">
+    <!-- 偵測CV -->
+    <script>
+        window.__letroUgcGadget = window.__letroUgcGadget || {};
+        __letroUgcGadget.advertiser_id = 239;
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://letro.jp/tags/js/letro.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'letro-jssdk'));
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZC4KG2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- CV tag -->
+    <script src="https://resultplus.jp/ac/fpc_action.js" id="resultplus-ac"></script>
+    <script>
+        (function () {
+            var currentURL = new URL(window.location.href);
+            var url_parem = {
+                order_id: currentURL.searchParams.get("order_id"),
+                payment_total: currentURL.searchParams.get("payment_total")
+            }
+            var itpAction = new ResultplusItpAction('resultplus-ac');
+            var clid = 587;
+            var uid = url_parem.order_id;
+            var pid = 1;
+            var amount = url_parem.payment_total;
+            var item = '';
+            var ac_type = 2;
+            itpAction.actionCL(clid, uid, pid, amount, item, ac_type);
+        })();
+    </script>
+    <!-- End CV tag -->
+
+    <!-- re20200603 -->
+    <script type="text/javascript">
+        window.rtAsyncInit = function () {
+            return {
+                sid: 26,
+                pid: 29,
+                price: getJsonFromUrl().payment_total,
+                reward: -1,
+                cname: '',
+                ctel: '',
+                cemail: '',
+                cinfo: getJsonFromUrl().order_id,
+            };
+        }
+    </script>
+    <script async defer id="rt_script" src="https://track.rentracksw.com/js/rt.sdk.js" type="text/javascript"></script>
+
+    <!-- 20200710 ceres -->
+    <script language='javascript' src='https://ad-track.jp/ad/js/cv.js'></script>
+    <script
+        language='javascript'>adtrack_cv.cv('adm_adtr_xuid', 'https://ad-track.jp/ad', `_buyer=3491&_article=13225&_price=${getJsonFromUrl().payment_total}&_buid=${getJsonFromUrl().order_id}`);</script>
+    <noscript><img
+            src="https://ad-track.jp/ad/p/cv?_buyer=3491&_article=13225&_price=getJsonFromUrl().payment_total&_buid=getJsonFromUrl().order_id"
+            width="1" height="1"></noscript>
+
+    <!-- 20200819 afb -->
+    <script>
+        if (!window.afblpcvCvConf) {
+            window.afblpcvCvConf = [];
+        }
+        window.afblpcvCvConf.push({
+            siteId: "e55b4574",
+            commitData: {
+                pid: "R121132",
+                u: getJsonFromUrl().order_id,
+            }
+        });
+    </script>
+    <script src="https://t.afi-b.com/jslib/lpcv.js?cid=e55b4574&pid=R121132" async="async"></script>
+
+    <!-- 20200909 ranking tag-->
+    <script src="https://static.appront.net/tracking.js"></script>
+    <script>
+        document.write(`<img id="appront_sales" style="display: none;" src="https://t.appront.net/tracking.jpg?p=986&oi=${getJsonFromUrl().order_id}">`);
+    </script>
+    
+    <div class="container">
+        <div class="pageTitle"><img src="images/title.png" width="320" height="92" title="購物完成" /></div>
+        <div class="subtitle">
+            <p class="tx1" style="line-height:32px; margin-bottom:10px;font-family: 'Noto Serif TC', serif;">
+                <span class="blue">非常感謝您的購買！<br>我們會盡快安排出貨給您，<br>並期待您下次的光臨！</span>
+            </p>
+        </div>
+        <div class="qrcode PC" style="position: relative;">
+            <p class="animate__animated animate__flash animate__infinite"
+                style="font-size:25px;line-height:36px; position: absolute;top: 7%;left: 7%;">LUNA官方 <span
+                    style="color:#4CB233;font-weight: bold;">LINE@</span></p>
+            <p class="animate__animated animate__flash animate__infinite"
+                style="font-size:25px;line-height:36px;letter-spacing:4px;color:#859f84;font-weight: bold; position: absolute;top: 16%;left: 11%;">
+                立即掃描加入</p>
+            <img src="images/QR code.jpg" alt="">
+            <p style="font-size:25px;line-height:36px;letter-spacing:4px; position: absolute;right: 11%;bottom: 28%;">
+                ID:@779lezme</p>
+            <p class="animate__animated animate__heartBeat animate__infinite "
+                style="font-size:24px;line-height:36px;color:#895c91;font-family: 'Noto Serif TC', serif;font-weight: bold;">
+                享最即時的<span style="color:#cf76a2">專屬優惠</span>及<br>最貼心的美胸保養資訊</p>
+        </div>
+        <div class="join_btn SP">
+            <p style="font-size:32px;line-height:36px;margin:4% 0;">LUNA官方 <span
+                    style="color:#4CB233;font-weight: bold;">LINE@</span></p>
+            <a href="http://bit.ly/3pChliS" target="blank"><img src="images/join_btn.jpg" title="" style="width: 60%;"
+                    class="animate__animated animate__heartBeat animate__infinite "></a>
+            <p class="animate__animated animate__flash animate__infinite"
+                style="font-size:24px;line-height:36px;color:#895c91;font-family: 'Noto Serif TC', serif;font-weight: bold;">
+                享最即時的<span style="color:#cf76a2">專屬優惠</span>及<br>最貼心的美胸保養資訊</p>
+        </div>
+        <div class="contents">
+            <div class="row" style="display:flex;flex-direction: row">
+                <div class="col-8" style="flex:2">
+                    <p class="tx4">
+                        我們已經以電子郵件的方式寄出了您本次的訂購明細，還請您確認一下。<br>
+                        商品將於您下單後的隔天～3個工作天內送至您手上。<br>
+                        到貨當日，請務必確認有人可以收貨。<br>
+                    </p>
+                </div>
+                <div class="col-4 PC" style="flex:1">
+                    <a href="#" target="blank"><img src="images/icon.gif" title=""
+                            style="width: 85%;padding-top: 25%;"></a>
+                </div>
+            </div>
+            <div class="SP">
+                <a href="#" target="blank"><img src="images/icon.gif" title=""></a>
+            </div>
+            <div class="inform">
+                <ul>
+                    <li>本商品屬個人衛生用品，係屬消保法第十九條第一項所稱合理例外情事，個人衛生用品不適用於七天猶豫期之規定，恕無法受理因個人因素之退換貨，敬請見諒。</li>
+
+                </ul>
+            </div>
+            <p class="red" style="margin-bottom: 20px;">以上內容還請您詳細閱讀，如造成不便，敬請見諒。</p>
+            <p class="tx3">「Viage」在日文中有「無論幾歲都能保持美麗自信」的涵義在。
+                我們將這樣的想法灌注在這款晚安立體美型內衣中，希望不只能在輕鬆舒適的睡眠中解決女性對胸部的各種煩惱，也能幫助大家在日常生活中一步步以理想美胸為目標，為生活點綴上不同的繽紛色彩！
+
+
+            </p>
+        </div>
+
+        <!--/* Foot */-->
+        <div class="foot">
+
+            <hr>
+            <div class="footContact">
+                <!-- <p class="footTitle">台灣娜珂黛肌</p> -->
+                <p class="footContents" style="line-height: 14px; margin-bottom: 6px;">傾聽您的需求，應援您的健康生活</p>
+                <p class="footContents">
+                    TEL：<a href="tel:+886-2-2321-1502" data-content="+886-2-2321-1502">02-2321-1501</a><br>
+                    E-mail：<a href="mailto:support@viagebeautybra.com">support@viagebeautybra.com</a>
+                    <br>
+                    週一至週五 11:00-18:00​ (國定例假日除外)
+                </p>
+            </div>
+            <div class="footContactR">
+                <table border="0" cellspacing="0" cellpadding="5">
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.instagram.com/viage_tw/?hl=zh-tw" target="_blank"><img
+                                        src="images/icon_ig.png" height="40px"></a></td>
+                            <td><a href="http://bit.ly/3pChliS" target="_blank"><img
+                                        src="images/icon_line.png" height="40px"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
